@@ -40,6 +40,7 @@ CREATE TABLE dept_manager (
 	    FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 	    FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
+
 -- create a department salaries table
 CREATE TABLE salaries (
         emp_no INT PRIMARY KEY,
@@ -47,15 +48,23 @@ CREATE TABLE salaries (
 	    FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
 
+--View Tables
+select * from titles; 
+select * from employees; 
+select * from departments; 
+select * from dept_emp; 
+select * from dept_manager; 
+select * from salaries; 
+
 
 
 --Drop Tables
-Drop table dept_manager;
-Drop table dept_emp;
-Drop table salaries;
-Drop table departments;
-Drop table employees;
-Drop table titles;
+--Drop table dept_manager;
+--Drop table dept_emp;
+--Drop table salaries;
+--Drop table departments;
+--Drop table employees;
+--Drop table titles;
 
 
 
